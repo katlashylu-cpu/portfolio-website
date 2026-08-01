@@ -177,20 +177,46 @@ section{
 
 /*================ SKILLS ================*/
 
+/*================ SKILLS ================*/
+
 .skills-container{
     display:flex;
     justify-content:center;
-    gap:100px;
+    gap:35px;
     flex-wrap:wrap;
 }
 
 .skill{
+    width:220px;
+    padding:25px;
     text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.skill:hover{
+    transform:translateY(-8px);
 }
 
 .skill i{
-    font-size:80px;
+    font-size:60px;
+    margin-bottom:15px;
 }
+
+.skill h3{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.skill p{
+    font-size:14px;
+    line-height:22px;
+    color:#555;
+}
+
+
+/* ICON COLORS */
 
 .fa-html5{
     color:#ff5722;
@@ -200,12 +226,36 @@ section{
     color:#2196f3;
 }
 
-.fa-mobile-screen{
-    color:#9c27b0;
+.fa-js{
+    color:#f7df1e;
 }
 
-.skill h3{
-    margin-top:15px;
+.fa-python{
+    color:#3776ab;
+}
+
+.fa-database{
+    color:#00618a;
+}
+
+.fa-code{
+    color:#092e20;
+}
+
+.fa-server{
+    color:#ff6600;
+}
+
+.fa-git-alt{
+    color:#f05032;
+}
+
+.fa-github{
+    color:#181717;
+}
+
+.fa-mobile-screen{
+    color:#9c27b0;
 }
 
 /*================ PROJECTS ================*/
