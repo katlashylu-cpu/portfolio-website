@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.left{
+    width:50vw;
+    height:100vh;
+    position:relative;
+    float:left;
+    box-sizing:border-box;
+}
+
+.right{
+    width:49vw;
+    height:100vh;
+    float:right;
+    box-sizing:border-box;
+    border-left:1px solid rgba(0,0,0,0.1);
+}
+
+.left .images #img1{
+    width:8vw;
+    height:32vh;
+    position:absolute;
+    top:45vh;
+    left:10vw;
+    border-radius:25px;
+    z-index:1;
+    transform:rotate(-10deg);
+}
+
+.left .images #img2{
+    width:10vw;
+    height:42vh;
+    position:absolute;
+    top:38vh;
+    left:17vw;
+    border-radius:25px;
+    z-index:3;
+  
+}
+
+.left .images #img3{
+    width:8vw;
+    height:32vh;
+    position:absolute;
+    top:45vh;
+    left:26vw;
+    border-radius:25px;
+    z-index:2;
+    transform:rotate(13deg);
+}
+
+.left .caption{
+    width:35vw;
+    position:absolute;
+    top:20vh;
+    left:5vw;
+    text-align:center;
+}
+
+.left .caption p{
+    font-size:xx-large;
+    line-height:1.1;
+}
+
+.left .caption strong{
+    display:block;
+    font-size:xx-large;
+    background:linear-gradient(45deg,#feda75,#d62976,#962fbf,#4f5bd5);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.left .logo{
+    position:absolute;
+    top:8vh;
+    left:5vw;
+}
+
+.left .logo img{
+    width:5vw;
+    height:10vh;
+}
+
+.right .box{
+    width:40%;
+    height:50%;
+    position:absolute;
+    top:20vh;
+    right:5vw;
+    font-size:small;
+    font-weight:bolder;
+}
+.right .box h2{
+    margin-left:30px;
+}
+
+.right .box input{
+    display:block;
+    width:90%;
+    height:40px;
+    margin:15px auto;
+}
+
+.right .box input[type=text],
+.right .box input[type=password]{
+    border-radius:6px;
+    border:1px solid rgba(5,5,5,0.2);
+    padding-left:10px;
+}
+
+.right .box input[type=button]{
+    width:90%;
+    height:40px;
+    border-radius:5px;
+    margin-top:10px;
+    background-color:blue;
+    color:white;
+    border:none;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.right .box input[type=button]:hover{
+    background-color:darkblue;
+}
+
+.right .box .forget input[type=button]{
+    width:90%;
+    height:40px;
+    border-radius:5px;
+    margin-top:10px;
+    color:black;
+    background-color:white;
+   border:none;
+    font-size:small;
+}
+
+.right .box .forget input[type=button]:hover{
+    background-color:gray;
+}
+
+.right .box .log input[type=button]{
+    width:90%;
+    height:40px;
+    border-radius:50px;
+    margin-top:10px;
+    color:black;
+    background-color:white;
+    border:1px solid #1877f2;
+    font-size:small;
+    cursor:pointer;
+}
+
+.right .box .log input[type=button]:hover{
+    background-color:gray;
+}
+
+
+.right .box .create input[type=button]{
+    width:90%;
+    height:40px;
+    border-radius:50px;
+    margin-top:10px;
+    color:#1877f2;
+    background-color:white;
+    border:1px solid #1877f2;
+    font: size 15px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.right .box .create input[type=button]:hover{
+    background-color:gray;
+}
+
