@@ -3,16 +3,54 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Portfolio</title>
 
     <link rel="stylesheet" href="portfolio.style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Equal project card heights and button alignment -->
+    <style>
+        .project-container {
+            align-items: stretch;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .project-card p {
+            min-height: 96px;
+        }
+
+        .project-card .project-tech {
+            margin-top: auto;
+            padding-top: 10px;
+        }
+
+        .project-card .project-btn {
+            margin-top: 12px;
+            align-self: flex-start;
+        }
+
+        .project-card img {
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -20,19 +58,25 @@
 <!--================ NAVBAR ================-->
 
 <header>
+
     <div class="logo">
         My<span>Portfolio</span>
     </div>
 
     <nav>
+
         <ul>
+
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+
         </ul>
+
     </nav>
+
 </header>
 
 
@@ -41,8 +85,11 @@
 <section id="home" class="home">
 
     <div class="home-text">
+
         <h2>Hi, I'm</h2>
+
         <h1>Katla Shylaja</h1>
+
         <h3>Python Full Stack Developer</h3>
 
         <p>
@@ -52,14 +99,17 @@
         </p>
 
         <a href="assets/resume/Katla%20Shylaja%20Resume.pdf"
-           download="Katla Shylaja Resume.pdf"
-           class="cv-btn">
-            <i class="fa-solid fa-download"></i> Download CV
+            download="Katla Shylaja Resume.pdf"
+            class="cv-btn">
+                <i class="fa-solid fa-download"></i> Download CV
         </a>
+
     </div>
 
     <div class="home-image">
+
         <img src="assets/images/shy.jpg.png" alt="Shylaja Katla">
+
     </div>
 
 </section>
@@ -74,16 +124,20 @@
     <div class="about-container">
 
         <div class="about-image">
+
             <img src="assets/images/about.png" alt="About Image">
+
         </div>
 
         <div class="about-text">
+
             <p>
                 Hello! I'm <b>Katla Shylaja</b>, an Information Technology graduate
                 passionate about Python Full Stack Development. I enjoy building
                 responsive websites, learning modern technologies, and creating
                 projects that solve real-world problems.
             </p>
+
         </div>
 
     </div>
@@ -95,7 +149,9 @@
 
 <section id="skills">
 
-    <h2 class="title">Skills</h2>
+    <h2 class="title">
+        Skills
+    </h2>
 
     <div class="skills-container">
 
@@ -168,13 +224,16 @@
 
 <section id="projects">
 
-    <h2 class="title">Projects</h2>
+    <h2 class="title">
+        Projects
+    </h2>
 
     <div class="project-container">
 
         <!-- Instagram Login Page -->
 
         <div class="project-card">
+
             <img src="assets/images/insta profile .png"
                  alt="Instagram Login Page">
 
@@ -189,12 +248,14 @@
                class="project-btn">
                 View Project
             </a>
+
         </div>
 
 
         <!-- Portfolio Website -->
 
         <div class="project-card">
+
             <img src="assets/images/portfolio.jpeg"
                  alt="Portfolio Website">
 
@@ -209,12 +270,14 @@
                class="project-btn">
                 View Project
             </a>
+
         </div>
 
 
         <!-- Student Registration Form -->
 
         <div class="project-card">
+
             <img src="assets/images/regstration form.png"
                  alt="Student Registration Form">
 
@@ -230,40 +293,55 @@
                class="project-btn">
                 View Project
             </a>
+
         </div>
 
 
-        <h3>Internship & Project Management System</h3>
+        <!-- Internship and Project Management System -->
 
-        <p>
-            Project management application for student submissions,
-            faculty evaluation, and progress tracking.
-        </p>
-        
-        <strong>Python · Flask · MySQL</strong>
-        
-        <a href="https://github.com/katlashylu-cpu?tab=repositories"
+        <div class="project-card">
+
+            <img src="assets/images/internship-management.png"
+                 alt="Internship and Project Management System">
+
+            <h3>Internship and Project Management System</h3>
+
+            <p>
+                Project management system for student submissions,
+                faculty evaluation, and project progress tracking.
+            </p>
+
+            <div class="project-tech">
+                Python · Flask · MySQL
+            </div>
+
+            <a href="https://github.com/katlashylu-cpu?tab=repositories"
                target="_blank"
                rel="noopener noreferrer"
                class="project-btn">
                 View Project
-        </a>
+            </a>
+
+        </div>
 
 
         <!-- AI-Powered Security Monitoring System -->
 
         <div class="project-card">
+
             <img src="assets/images/ai-security.png"
                  alt="AI-Powered Security Monitoring System">
 
             <h3>AI-Powered Security Monitoring System</h3>
 
             <p>
-                Security monitoring project using camera-based face detection to help identify
-                unauthorized persons and trigger an alert.
+                Camera-based security monitoring system that detects
+                unauthorized persons and triggers alerts.
             </p>
 
-            <div class="project-tech">Python · OpenCV · Flask</div>
+            <div class="project-tech">
+                Python · OpenCV · Flask
+            </div>
 
             <a href="https://github.com/katlashylu-cpu/ai-powered-security-monitoring-system"
                target="_blank"
@@ -271,23 +349,27 @@
                class="project-btn">
                 <i class="fa-brands fa-github"></i> View on GitHub
             </a>
+
         </div>
 
 
         <!-- Online Quiz Application -->
 
         <div class="project-card">
+
             <img src="assets/images/online-quiz.png"
                  alt="Online Quiz Application">
 
             <h3>Online Quiz Application</h3>
 
             <p>
-                Interactive quiz application built with web technologies, allowing users
-                to answer questions and view their quiz results.
+                Interactive quiz application that lets users answer
+                questions and view their quiz results.
             </p>
 
-            <div class="project-tech">HTML · CSS · JavaScript</div>
+            <div class="project-tech">
+                HTML · CSS · JavaScript
+            </div>
 
             <a href="https://github.com/katlashylu-cpu/online-quiz-application"
                target="_blank"
@@ -295,6 +377,7 @@
                class="project-btn">
                 <i class="fa-brands fa-github"></i> View on GitHub
             </a>
+
         </div>
 
     </div>
@@ -306,36 +389,49 @@
 
 <section id="contact">
 
-    <h2 class="title">Contact Me</h2>
+    <h2 class="title">
+        Contact Me
+    </h2>
 
     <div class="contact-container">
 
         <div class="contact-box">
+
             <i class="fa-solid fa-envelope"></i>
+
             <p>
                 <a href="mailto:katlashylu@gmail.com">
                     katlashylu@gmail.com
                 </a>
             </p>
+
         </div>
 
+
         <div class="contact-box">
+
             <i class="fa-solid fa-phone"></i>
+
             <p>
                 <a href="tel:+918309249302">
                     +91 8309249302
                 </a>
             </p>
+
         </div>
 
+
         <div class="contact-box">
+
             <i class="fa-solid fa-location-dot"></i>
+
             <p>
                 <a href="https://www.google.com/maps/search/Hyderabad,India"
                    target="_blank">
                     Hyderabad, India
                 </a>
             </p>
+
         </div>
 
     </div>
@@ -346,10 +442,13 @@
 <!--================ FOOTER ================-->
 
 <footer>
+
     <p>
         © 2026 Katla Shylaja. All Rights Reserved.
     </p>
+
 </footer>
+
 
 </body>
 </html>
