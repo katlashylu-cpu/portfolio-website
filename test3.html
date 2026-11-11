@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-image:url("books.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:450px;
+    background:rgba(0,0,0,0.45);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+h2{
+    text-align:center;
+    color:#FFD700;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    color:white;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="file"],
+select{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+.radio{
+    color:white;
+    margin-bottom:15px;
+}
+
+.radio input{
+    width:auto;
+    margin-right:5px;
+    margin-left:10px;
+}
+
+.checkbox{
+    color:white;
+    margin-bottom:15px;
+}
+
+.checkbox input{
+    width:auto;
+}
+
+input[type="color"]{
+    width:100%;
+    height:45px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:8px;
+}
+
+input[type="submit"]{
+    width:100%;
+    padding:12px;
+    background:#007BFF;
+    color:white;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background:#0056b3;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<form action="https://www.google.com/">
+
+<h2>Student Registration Form</h2>
+
+<label>Username</label>
+<input type="text" placeholder="Enter Username">
+
+<label>Password</label>
+<input type="password" placeholder="Enter Password">
+
+<label>Language</label>
+<select>
+    <option>Python</option>
+    <option selected>MySQL</option>
+    <option>HTML/CSS</option>
+</select>
+
+<label>Date of Birth</label>
+<input type="date">
+
+<label>Gender</label>
+
+<div class="radio">
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+</div>
+
+<label>Photo</label>
+<input type="file">
+
+<div class="checkbox">
+    <input type="checkbox">
+    I confirm that the details are exactly correct.
+</div>
+
+<label>Favourite Color</label>
+<input type="color">
+
+<input type="submit" value="Register">
+
+</form>
+
+</div>
+
+</body>
+</html>
