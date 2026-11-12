@@ -540,3 +540,10 @@ section{
     font-size:13px;
     font-weight:600;
 }
+/* Fix AI project image */
+.project-card img[src="assets/images/ai-security.png"] {
+    width: 100%;
+    height: 180px;
+    object-fit: contain !important;
+    background: #f5f7fb;
+}
