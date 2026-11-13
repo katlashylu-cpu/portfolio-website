@@ -778,6 +778,27 @@ section{
     }
 
 }
+/*========== MOBILE PROFILE AND SKILLS FIX ==========*/
+
+@media (max-width: 480px) {
+
+    /* Show the full profile photo */
+    .home-image img {
+        width: 220px;
+        height: 220px;
+        object-fit: contain;
+        border-radius: 50%;
+        border-width: 6px;
+    }
+
+    /* Give skill cards more room */
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 0 10px;
+    }
+
+}
 
 
 
