@@ -745,9 +745,9 @@ section{
     }
 
 }
-/*========== MOBILE PROFILE AND SKILLS FIX ==========*/
 
-/* Show the full profile photo on mobile */
+/*========== MOBILE PROFILE PHOTO ==========*/
+
 @media (max-width: 480px) {
     .home-image img {
         width: 260px;
@@ -758,27 +758,33 @@ section{
     }
 }
 
-    /* Give skill cards more room */
+/*========== FINAL SKILLS LAYOUT ==========*/
+
+.skills-container {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.skill {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
     .skills-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         gap: 18px;
         padding: 0 10px;
     }
 
-}
-/* Fix Skills layout */
-.skills-container {
-    display: grid !important;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 25px;
-}
-
-@media (max-width: 768px) {
-    .skills-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 18px;
+    .skill {
+        padding: 20px 10px;
     }
 }
-
-
 
