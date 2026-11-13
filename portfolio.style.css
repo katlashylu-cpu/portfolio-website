@@ -342,22 +342,26 @@ section{
     align-items:stretch;
 }
 
-.project-card{
-    width:320px;
-    border-radius:10px;
-    overflow:hidden;
-    background:white;
-    box-shadow:0 0 10px rgba(0,0,0,.15);
-    transition:.3s;
 
-    /* Equal card layout */
-    display:flex;
-    flex-direction:column;
+.project-card {
+    width: 320px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #ffffff, #f8f6ff);
+    border: 1px solid #eee9ff;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.project-card:hover{
-    transform:translateY(-8px);
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 30px rgba(118, 82, 214, 0.18);
+    border-color: #7652d6;
 }
+
 
 .project-card img{
     width:100%;
