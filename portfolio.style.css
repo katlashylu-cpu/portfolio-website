@@ -819,9 +819,9 @@ section{
     }
 
     /* Adjust home section spacing on mobile */
-    .home {
-        padding: 40px 20px 50px;
-    }
+.home {
+    padding: 0px 20px 50px;
+}
 
     /* Display the full profile photo */
     .home-image img {
