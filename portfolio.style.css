@@ -214,10 +214,6 @@ section{
 
 /*================ SKILLS ================*/
 
-
-/*================ SKILLS ================*/
-
-
 .skills-container {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -227,11 +223,10 @@ section{
     padding: 0 15px;
 }
 
-
 .skill {
-    width: 230px;
+    width: 100%;
     min-height: 245px;
-    padding: 28px 22px;
+    padding: 28px 15px;
     box-sizing: border-box;
     text-align: center;
     border-radius: 18px;
@@ -274,60 +269,32 @@ section{
 }
 
 /* ICON COLORS */
-
-.fa-html5 {
-    color: #ff5722;
-}
-
-.fa-css3-alt {
-    color: #2196f3;
-}
-
-.fa-js {
-    color: #d6b800;
-}
-
-.fa-python {
-    color: #3776ab;
-}
-
-.fa-database {
-    color: #00618a;
-}
-
-.fa-code {
-    color: #092e20;
-}
-
-.fa-server {
-    color: #ff6600;
-}
-
-.fa-git-alt {
-    color: #f05032;
-}
-
-.fa-github {
-    color: #181717;
-}
-
-.fa-mobile-screen {
-    color: #9c27b0;
-}
+.fa-html5 { color: #ff5722; }
+.fa-css3-alt { color: #2196f3; }
+.fa-js { color: #d6b800; }
+.fa-python { color: #3776ab; }
+.fa-database { color: #00618a; }
+.fa-code { color: #092e20; }
+.fa-server { color: #ff6600; }
+.fa-git-alt { color: #f05032; }
+.fa-github { color: #181717; }
+.fa-mobile-screen { color: #9c27b0; }
 
 /* MOBILE RESPONSIVE */
-
 @media (max-width: 768px) {
     .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 18px;
-        padding: 0 15px;
+        padding: 0 10px;
     }
 
     .skill {
         width: 100%;
-        max-width: 320px;
+        min-width: 0;
+        padding: 20px 10px;
     }
 }
+
 
 /*================ PROJECTS ================*/
 
