@@ -217,15 +217,16 @@ section{
 
 /*================ SKILLS ================*/
 
+
 .skills-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 28px;
-    flex-wrap: wrap;
-    max-width: 1150px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
     margin: 40px auto;
+    padding: 0 15px;
 }
+
 
 .skill {
     width: 230px;
