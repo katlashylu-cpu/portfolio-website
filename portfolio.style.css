@@ -662,6 +662,25 @@ section{
     color: #007bff;
     text-decoration: underline;
 }
+/*================ FOOTER ================*/
+.footer {
+    background: linear-gradient(135deg, #17112b, #302052);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 50px;
+    border-top: 4px solid #7652d6;
+}
+
+.footer p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.footer-tagline {
+    color: #c9b8f5;
+    font-size: 13px !important;
+}
 
 
 
