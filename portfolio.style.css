@@ -787,4 +787,14 @@ section{
         padding: 20px 10px;
     }
 }
+/* Show full profile photo on mobile */
+@media screen and (max-width: 480px) {
+    .home-image img {
+        width: 260px;
+        height: 260px;
+        object-fit: contain;
+        object-position: center center;
+        border-radius: 50%;
+    }
+}
 
