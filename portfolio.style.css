@@ -433,50 +433,78 @@ section{
     font-weight:600;
 }
 
-/*================ CONTACT ================*/
 
 /*================ CONTACT ================*/
 
-.contact-container{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:80px;
-    flex-wrap:wrap;
-    padding:40px 0;
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 30px 15px;
 }
 
-
-.contact-box{
-    display:flex;
-    align-items:center;
-    gap:15px;
+.contact-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 22px 25px;
+    min-width: 260px;
+    background: linear-gradient(145deg, #ffffff, #f8f6ff);
+    border: 1px solid #eee9ff;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+    transition: 0.3s ease;
 }
 
-
-.contact-box i{
-    width:45px;
-    height:45px;
-    background:#dcecff;
-    color:#2f80ff;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:20px;
+.contact-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(118, 82, 214, 0.16);
 }
 
-
-.contact-box p{
-    margin:0;
-    font-size:18px;
+.contact-box i {
+    width: 48px;
+    height: 48px;
+    background: #eee9ff;
+    color: #7652d6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    flex-shrink: 0;
 }
 
-
-.contact-box a{
-    text-decoration:none;
-    color:#222;
+.contact-box p {
+    margin: 0;
+    font-size: 16px;
+    overflow-wrap: anywhere;
 }
+
+.contact-box a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.contact-box a:hover {
+    color: #7652d6;
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        gap: 15px;
+    }
+
+    .contact-box {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
 
 /*================ RESPONSIVE ================*/
 
